@@ -9,7 +9,7 @@
 
 body {
     background-color: #F8FAFC !important;
-    /*scroll-behavior: smooth;*/
+    scroll-behavior: smooth;
 }
 
 p {
@@ -34,37 +34,43 @@ h1, h2, h3, h4, h5, h6, p, button {
     padding: 120px 0;
 
 }
+
 @media screen and (max-width: 767px) {
-    .section{
+    .section {
         padding: 70px 0;
 
     }
 }
+
 .title {
     margin-bottom: 60px;
     font-size: 35px;
     font-weight: bold;
     text-align: center;
 }
+
 @media screen and (max-width: 767px) {
-    .title{
+    .title {
         font-size: 25px;
     }
 }
+
 /*hero section*/
+
 .hero-wrapper {
     padding-top: 30px;
     background-color: white;
     position: relative;
     overflow: hidden;
-    border-radius: 24% 24% 53% 30% / 0% 0% 39% 30%;
+    clip-path: polygon(0% 0%, 0% 82.5%, 1.69492% 84.3293%, 3.38983% 86.1385%, 5.08475% 87.9078%, 6.77966% 89.6179%, 8.47458% 91.25%, 10.1695% 92.7862%, 11.8644% 94.2098%, 13.5593% 95.505%, 15.2542% 96.6578%, 16.9492% 97.6555%, 18.6441% 98.487%, 20.339% 99.1435%, 22.0339% 99.6176%, 23.7288% 99.9041%, 25.4237% 100%, 27.1186% 99.9041%, 28.8136% 99.6176%, 30.5085% 99.1435%, 32.2034% 98.487%, 33.8983% 97.6555%, 35.5932% 96.6578%, 37.2881% 95.505%, 38.9831% 94.2098%, 40.678% 92.7862%, 42.3729% 91.25%, 44.0678% 89.6179%, 45.7627% 87.9078%, 47.4576% 86.1385%, 49.1525% 84.3293%, 50.8475% 82.5%, 52.5424% 80.6708%, 54.2373% 78.8616%, 55.9322% 77.0922%, 57.6271% 75.3821%, 59.322% 73.75%, 61.017% 72.2138%, 62.7119% 70.7902%, 64.4068% 69.495%, 66.1017% 68.3422%, 67.7966% 67.3446%, 69.4915% 66.513%, 71.1864% 65.8565%, 72.8814% 65.3824%, 74.5763% 65.0959%, 76.2712% 65%, 77.9661% 65.0959%, 79.661% 65.3824%, 81.3559% 65.8565%, 83.0509% 66.513%, 84.7458% 67.3446%, 86.4407% 68.3422%, 88.1356% 69.495%, 89.8305% 70.7902%, 91.5254% 72.2138%, 93.2203% 73.75%, 94.9153% 75.3821%, 96.6102% 77.0922%, 98.3051% 78.8616%, 100% 80.6708%, 100% 0%); shape-outside: polygon(0% 0%, 0% 82.5%, 1.69492% 84.3293%, 3.38983% 86.1385%, 5.08475% 87.9078%, 6.77966% 89.6179%, 8.47458% 91.25%, 10.1695% 92.7862%, 11.8644% 94.2098%, 13.5593% 95.505%, 15.2542% 96.6578%, 16.9492% 97.6555%, 18.6441% 98.487%, 20.339% 99.1435%, 22.0339% 99.6176%, 23.7288% 99.9041%, 25.4237% 100%, 27.1186% 99.9041%, 28.8136% 99.6176%, 30.5085% 99.1435%, 32.2034% 98.487%, 33.8983% 97.6555%, 35.5932% 96.6578%, 37.2881% 95.505%, 38.9831% 94.2098%, 40.678% 92.7862%, 42.3729% 91.25%, 44.0678% 89.6179%, 45.7627% 87.9078%, 47.4576% 86.1385%, 49.1525% 84.3293%, 50.8475% 82.5%, 52.5424% 80.6708%, 54.2373% 78.8616%, 55.9322% 77.0922%, 57.6271% 75.3821%, 59.322% 73.75%, 61.017% 72.2138%, 62.7119% 70.7902%, 64.4068% 69.495%, 66.1017% 68.3422%, 67.7966% 67.3446%, 69.4915% 66.513%, 71.1864% 65.8565%, 72.8814% 65.3824%, 74.5763% 65.0959%, 76.2712% 65%, 77.9661% 65.0959%, 79.661% 65.3824%, 81.3559% 65.8565%, 83.0509% 66.513%, 84.7458% 67.3446%, 86.4407% 68.3422%, 88.1356% 69.495%, 89.8305% 70.7902%, 91.5254% 72.2138%, 93.2203% 73.75%, 94.9153% 75.3821%, 96.6102% 77.0922%, 98.3051% 78.8616%, 100% 80.6708%, 100% 0%);
 }
-
 @media screen and (max-width: 767px) {
-    .hero-wrapper {
-        border-radius: inherit;
+    .hero-wrapper{
+        clip-path: inherit;
     }
 }
+
+
 
 
 /* Navbar*/
@@ -79,10 +85,9 @@ h1, h2, h3, h4, h5, h6, p, button {
     position: absolute;
     background-color: #d0cbcb !important;
     top: -60px;
-font-size: 15px;
+    font-size: 15px;
     padding: 10px;
 }
-
 
 
 .navbar-toggler-icon {
@@ -171,7 +176,7 @@ font-size: 15px;
 .single-card {
     width: 320px;
     height: 308px;
-    box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 0 3px 6px #00000029;
     border-radius: 20px;
     padding: 20px 10px;
 }
@@ -190,6 +195,7 @@ font-size: 15px;
 /*Wave container*/
 .wave-container {
     background: white;
+
 }
 
 /*image wrapper*/
@@ -251,18 +257,20 @@ font-size: 15px;
 
 /*testimonials*/
 .testimonial-wrapper {
-    box-shadow: 0px 16px 48px #00000029;
+    box-shadow: 0 16px 48px #00000029;
     background: #F8FAFC;
     border-radius: 42px;
     padding: 40px;
     height: 363px;
 
 }
+
 @media screen and (max-width: 767px) {
-    .testimonial-wrapper{
+    .testimonial-wrapper {
         height: auto;
     }
 }
+
 .testimonial-header {
     display: flex;
     align-items: center;
@@ -291,8 +299,8 @@ font-size: 15px;
 .testimonial-card {
     width: 289px;
     height: 263px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 16px 48px #00000029;
+    background: #FFFFFF;
+    box-shadow: 0 16px 48px #00000029;
     border-radius: 30px;
     padding: 20px 15px;
 }
@@ -343,7 +351,8 @@ font-size: 15px;
     margin: auto;
     justify-content: space-around;
     align-items: center;
-
+flex-wrap: wrap;
+    row-gap: 20px;
 }
 
 .company-card {
